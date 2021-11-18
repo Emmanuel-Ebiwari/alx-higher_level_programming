@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-add = __import__('add_0').add
+from add_0 import add
 a = 1
 b = 2
-sums = add(a, b)
-print("{:d} + {:d} = {:d}".format(a, b, sums))
+res = add(a, b)
+if __name__ == "__main__":
+    print("{:d} + {:d} = {:d}".format(a, b, res))
