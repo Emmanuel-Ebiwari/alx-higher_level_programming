@@ -9,4 +9,4 @@ def print_matrix_integer(matrix=[[]]):
             print("{:d}{}{}"
                   .format(matrix[i][j], " "
                           if j < (len(matrix[i]) - 1) else "", ""
-                          if j < 2 else "\n"), end="")
+                          if j < (len(matrix[i]) - 1) else "\n"), end="")
