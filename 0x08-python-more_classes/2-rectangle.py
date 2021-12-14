@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Rectangle class"""
 
+
 class Rectangle:
     """blueprint of a Rectangle"""
     def __init__(self, width=0, height=0):
@@ -10,8 +11,9 @@ class Rectangle:
             height: the height of the rectangle
         """
 
-        self._width = width
-        self._height = height
+        self.__width = width
+        self.__height = height
+
     @property
     def width(self):
         """getter method"""
