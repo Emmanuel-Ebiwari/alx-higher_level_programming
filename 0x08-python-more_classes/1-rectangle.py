@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Rectangle class"""
 
+
 class Rectangle:
     """Creates a rectangle blueprint"""
 
@@ -31,7 +32,7 @@ class Rectangle:
         @property
         def height(self):
             """getter method"""
-            return self.__height 
+            return self.__height
 
         @height.setter
         def height(self, value):
