@@ -1,0 +1,45 @@
+0-add_integer test mode
+
+Importing function add_integer from module
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Test case 1:
+	>>> add_integer(5)
+	103
+
+Test case 2:
+	>>> add_integer(5, 6)
+	11
+
+Test case 3:
+	>>> add_integer(-5, 6)
+	1
+
+Test case 4:
+	>>> add_integer(-5, -6)
+	-11
+
+Test case 5:
+	>>> add_integer(5, -6)
+	-1
+
+Test case 6:
+	>>> add_integer(5.5, 6.7)
+	11
+
+Test case 7:
+	>>> add_integer("hello", "world")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Test case 8:                                                            >>> add_integer("hello", 4)
+        Traceback (most recent call last):
+        	...
+        TypeError: a must be an integer
+
+Test case 9:
+	 >>> add_integer(4, "world")
+	 Traceback (most recent call last):
+	 	...
+	 TypeError: b must be an integer

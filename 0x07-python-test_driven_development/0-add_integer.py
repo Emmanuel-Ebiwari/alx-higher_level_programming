@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def add_integer(a, b=98):
     """A function that performs an addition
     Args:
