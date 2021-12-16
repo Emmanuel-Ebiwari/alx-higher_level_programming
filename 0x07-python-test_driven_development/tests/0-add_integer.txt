@@ -33,13 +33,8 @@ Test case 7:
 		...
 	TypeError: a must be an integer
 
-Test case 8:                                                            >>> add_integer("hello", 4)
+Test case 8:
+	>>> add_integer("hello", 4)
         Traceback (most recent call last):
         	...
         TypeError: a must be an integer
-
-Test case 9:
-	 >>> add_integer(4, "world")
-	 Traceback (most recent call last):
-	 	...
-	 TypeError: b must be an integer
