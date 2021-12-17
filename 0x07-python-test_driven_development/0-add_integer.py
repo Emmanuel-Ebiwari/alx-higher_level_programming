@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def add_integer(a, b=98):
     """A function that performs an addition
     Args:
@@ -12,6 +13,4 @@ def add_integer(a, b=98):
         raise TypeError('a must be an integer')
     elif not isinstance(b, int) and not isinstance(b, float):
         raise TypeError('b must be an integer')
-    a = int(a)
-    b = int(b)
-    return a + b
+    return int(a) + int(b)
