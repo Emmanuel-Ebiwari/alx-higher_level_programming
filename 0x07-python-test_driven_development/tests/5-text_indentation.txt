@@ -1,0 +1,38 @@
+5-text_indentation test mode
+
+
+Importing text_indentation function from module
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test case 1:
+
+    >>> text_indentation("Test:Test Test?.")
+    Test:
+    <BLANKLINE>
+    Test Test?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+Test case 2:
+
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+Test cae 3:
+
+    >>> text_indentation("test2", "test2")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Test case 4:
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
