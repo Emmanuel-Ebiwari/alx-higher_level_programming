@@ -1,0 +1,7 @@
+1-my_list test mode
+
+Importing MyList class from module
+    >>> MyList = __import__('1-my_list').MyList
+
+Test case 1:
+    >>>
