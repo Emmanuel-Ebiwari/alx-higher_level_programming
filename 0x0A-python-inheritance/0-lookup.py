@@ -5,4 +5,9 @@
 
 
 def lookup(obj):
+    """Returns a list of attributes and methods of
+        object using the dir function
+        Args:
+            obj: object to be checked
+    """
     return dir(obj)
