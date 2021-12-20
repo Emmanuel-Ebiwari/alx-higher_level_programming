@@ -1,0 +1,4 @@
+7-base_geometry test mode
+
+Importing BaseGeometry class from module
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
