@@ -38,3 +38,11 @@ Test case 3:
 
     >>> list3.print_sorted()
     [-1, 2, 3.0, 20]
+
+Test case 4:
+    >>> list4 = MyList()
+    >>> list4
+    []
+
+    >>> list4.print_sorted()
+    []
