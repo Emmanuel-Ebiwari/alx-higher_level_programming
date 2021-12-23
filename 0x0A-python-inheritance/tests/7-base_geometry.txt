@@ -2,3 +2,50 @@
 
 Importing BaseGeometry class from module
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test case 1:
+         >>> m = __import__("7-base_geometry").__doc__
+         >>> len(m) > 1
+         True
+
+Test case 2:
+         >>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+         >>> len(c) > 1
+         True
+
+Test case 3:
+	 >>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
+	 >>> len(mod1) > 1
+	 True
+	 >>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+         >>> len(mod2) > 1
+         True
+
+Test caes 4:
+	 >>> bg = BaseGeometry()
+	 >>> bg.area()
+	 Traceback (most recent call last):
+	 ...
+	 Exception: area() is not implemented
+
+Test case 5:
+	 >>> bg.area(1)
+	 Traceback (most recent call last):
+         ...
+	 TypeError: area() takes 1 positional argument but 2 were given
+
+Test case 6:
+	 >>> bg.integer_validator("integer", 1)
+
+Test case 7:
+	 >>> bg.integer_validator("integer", 0)
+	 Traceback (most recent call last):
+         ...
+         ValueError: integer must be greater than 0
+
+Test case 8;
+	 >>> bg.integer_validator("integer", -1)
+	 Traceback (most recent call last):
+         ...
+         ValueError: integer must be greater than 0
+
