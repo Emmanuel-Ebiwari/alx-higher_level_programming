@@ -25,3 +25,27 @@ class Square(Rectangle):
         """overiding string method"""
         return "[{}] ({:d}) {:d}/{:d} - {:d}".format(
                 __class__.__name__, self.id, self.x, self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """A method that assigns attributes"""
+        attr_arg = [self.id, self.size, self.x, self.y]
+
+        if args:
+            for i in range(len(args)):
+                attr_arg[i] = args[i]
+        else:
+            if kwargs:
+                for k, v in kwargs.items():
+                    if k == "id":
+                        attr_arg[0] = v
+                    if k == "size":
+                        attr_arg[1] = v
+                    if k == "x":
+                        attr_arg[2] = v
+                    if k == "y":
+                        attr_arg[3] = v
+            else:
+                return
+
+        self.__init__(attr_arg[1], attr_arg[2],
+                      attr_arg[3], attr_arg[0])
