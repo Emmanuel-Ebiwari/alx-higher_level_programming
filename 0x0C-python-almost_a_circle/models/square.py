@@ -13,9 +13,15 @@ class Square(Rectangle):
     @property
     def size(self):
         """getter method"""
-        return super(Square, self).width
+        return self.__size
 
     @size.setter
     def size(self, value):
         """setter method"""
-        Square.width.fset(self, value)
+        self.__size = value
+        self.width = self.height = value
+
+    def __str__(self):
+        """overiding string method"""
+        return "[{}] ({:d}) {:d}/{:d} - {:d}".format(
+                __class__.__name__, self.id, self.x, self.y, self.width)
