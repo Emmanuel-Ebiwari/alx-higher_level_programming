@@ -10,4 +10,4 @@ function factorial (n) {
 }
 
 const num = parseInt(argv[2]);
-console.log(factorial(num))
+console.log(factorial(num));
