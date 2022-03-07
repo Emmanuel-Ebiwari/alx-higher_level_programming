@@ -11,7 +11,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class States(Base):
+class State(Base):
     """Objects that represents the state table in the database"""
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True,
