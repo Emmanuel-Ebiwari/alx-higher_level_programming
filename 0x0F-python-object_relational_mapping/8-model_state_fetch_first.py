@@ -17,8 +17,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=eng)
     session = Session()
     orm_query = session.query(State).order_by(State.id).first()
-    if orm_query is None:
-        print("Nothing")
+    if orm_query is not None:
+        print("{}: {}".format(orm_query.id, orm_query.name))
     else:
-        print("{}: {}".format(state.id, state.name))
+        print("Nothing")
     session.close()
